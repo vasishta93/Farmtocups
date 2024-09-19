@@ -8507,3 +8507,73 @@ h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+
+.coffee-details {
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.feature .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #e0e0e0; /* Placeholder for actual icons */
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-weight: bold;
+  color: #5d97a7; /* Adjust color as per the design */
+  font-size: 14px;
+}
+
+.coffee-notes {
+  text-align: right;
+}
+
+.coffee-notes h2 {
+  color: #5d97a7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tasting-notes {
+  font-size: 16px;
+  color: #000;
+}
+
+.brew-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5d97a7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .coffee-notes {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
