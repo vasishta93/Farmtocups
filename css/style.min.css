@@ -8492,30 +8492,12 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
   }
 }
 
-h1 {
-  text-transform: uppercase;
-  color: #3C261A;
-  font-weight: bold;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: #7B826A;
-  font-weight: normal;
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
 
 .coffee-details {
   padding: 20px 0;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .coffee-features {
   display: grid;
@@ -8567,13 +8549,3 @@ h2 {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  
-  .coffee-notes {
-    text-align: left;
-    margin-top: 20px;
-  }
-}
