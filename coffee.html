@@ -40,6 +40,15 @@
 		_html.className = _html.className.replace("no-js","js");
 	</script>
 	<script type="text/javascript" src="js/device.min.js"></script>
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<!-- Owl Carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 	<body class="page page-product-case">
 
@@ -99,9 +108,34 @@
 						<div class="row">
 							<div class="col-md-6 col-lg-6">
 								<div class="column">
-									<img class="img-fluid" src=" img/img_2.jpg" alt="demo" />
+									<div class="owl-carousel">
+										<div class="item">
+										  <img src="img/mockup/1.png" alt="Slide 1">
+										</div>
+										<div class="item">
+										  <img src="img/mockup/2.png"" alt="Slide 2">
+										</div>
+										<div class="item">
+										  <img src="img/mockup/3.png"" alt="Slide 3">
+										</div>
+										<div class="item">
+										  <img src="img/mockup/4.png"" alt="Slide 3">
+										</div>
+									  </div>
 								
 								</div>
+								<script>
+									$(document).ready(function(){
+									  $(".owl-carousel").owlCarousel({
+										loop: true,  // Infinite loop
+										margin: 0,   // No margin for full-width effect
+										nav: true,   // Show next/prev buttons
+										autoplay: true,  // Auto-play the slider
+										autoplayTimeout: 3000, // Slide interval in milliseconds
+										items: 1,   // Only show 1 item at a time (full width)
+									  });
+									});
+								  </script>
 							</div>
 
 							<div class="col-md-6 col-lg-6">
@@ -121,7 +155,7 @@
 									<h3>Size : 100 Gms <span style="font-size: 15px;">(Sampler Pack)</span> 
 										<br><span style="font-size: 18px; font-weight: normal;" >Sampler pack can make 5-6 cups of coffee based on use. Includes 1 flavouring element.</span></h3>
 									<h3>₹ 150 MRP <span style="font-size: 15px;">(Inclusive of delivery and taxes)</span></h3>
-									<a class="custom-btn big primary" href="#story">Buy Now</a> <!--add the link for product page -->
+									<a class="custom-btn big primary" href="https://tally.so/r/wk7eWM" target="_blank">Join the Waitlist</a> <!--add the link for product page -->
 									
 									
 								</div>
@@ -133,7 +167,7 @@
 				</div>
 			</section>	
 						<!-- start section -->
-			<section class="section section--background-base-light section--background-logo">
+			<section class="section section--background-base-light section--background-image">
 				<div class="container">
 					<div class="feature feature--style-1">
 						<div class="feature__inner">
@@ -201,10 +235,10 @@
 			<!-- end section -->
 
 			<section class="coffee-details">
-				<div class="container">
+				<div class="container" >
 				  <div class="row no-gutters">
 					<!-- Coffee Features Section -->
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-6"><br><br><br>
 					  <div class="coffee-features">
 						<!-- Feature Item -->
 						<div class="feature">
@@ -218,8 +252,8 @@
 						<div class="feature">
 						  <span class="icon"><i class="fas fa-coffee"></i></span>
 						  <div class="feature-text">
-							<p class="feature-title">HAVE IT</p>
-							<p>MILK</p>
+							<p class="feature-title">LOCATION</p>
+							<p>KODAGU</p>
 						  </div>
 						</div>
 						<!-- Feature Item -->
@@ -227,7 +261,7 @@
 						  <span class="icon"><i class="fas fa-mountain"></i></span>
 						  <div class="feature-text">
 							<p class="feature-title">ALTITUDE</p>
-							<p>900 - 1650M</p>
+							<p>9914 m or 2999. FT</p>
 						  </div>
 						</div>
 						<!-- Feature Item -->
@@ -238,22 +272,8 @@
 							<p>WASHED + NATURAL</p>
 						  </div>
 						</div>
-						<!-- Feature Item -->
-						<div class="feature">
-						  <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-						  <div class="feature-text">
-							<p class="feature-title">LOCATION</p>
-							<p>KARNATAKA + TAMIL NADU</p>
-						  </div>
-						</div>
-						<!-- Feature Item -->
-						<div class="feature">
-						  <span class="icon"><i class="fas fa-leaf"></i></span>
-						  <div class="feature-text">
-							<p class="feature-title">VARIETY</p>
-							<p>VARIOUS</p>
-						  </div>
-						</div>
+						
+						
 					  </div>
 					</div>
 			  
@@ -287,22 +307,17 @@
 		</main>
 
 		<!-- start footer -->
-		<footer id="footer" class="footer--style-1">
-			<div class="footer__inner">
-				<div class="container">
-					
-						
-							<div class="footer__item">
-								<p class="footer__copy">© 2019, Agricom. All rights reserved.<br />Template by <a href="https://themeforest.net/user/artureanec" target="_blank">Artureanec</a></p>
-							</div>
-						
-
-						
-
-					
-				</div>
+	<!-- start footer -->
+	<footer id="footer" class="footer--style-1">
+		<div class="footer__inner">
+			<div class="container">
+						<div class="footer__item">
+							<p class="footer__copy">© 2024, FarmtoCups. All rights reserved.<br /></a></p>
+						</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
+	<!-- end footer -->
 		<!-- end footer -->
 
 		<div id="btn-to-top-wrap">

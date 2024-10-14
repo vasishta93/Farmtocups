@@ -2343,22 +2343,22 @@ body {
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Book.eot');
-  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Gotham-Book.woff2') format('woff2'),
-       url('../fonts/Gotham-Book.woff') format('woff'),
-       url('../fonts/Gotham-Book.ttf') format('truetype');
+  src: url('fonts/Gotham-Book.eot');
+  src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Gotham-Book.woff2') format('woff2'),
+       url('fonts/Gotham-Book.woff') format('woff'),
+       url('fonts/Gotham-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../fonts/Gotham-Bold.eot');
-  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Gotham-Bold.woff2') format('woff2'),
-       url('../fonts/Gotham-Bold.woff') format('woff'),
-       url('../fonts/Gotham-Bold.ttf') format('truetype');
+  src: url('fonts/Gotham-Bold.eot');
+  src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Gotham-Bold.woff2') format('woff2'),
+       url('fonts/Gotham-Bold.woff') format('woff'),
+       url('fonts/Gotham-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -2689,6 +2689,10 @@ img {
 .section--background-logo {
   background: url(../img/img_1.png) center right 40px no-repeat
 }
+.section--background-image {
+  background: url(../img/img_2.png) center right 40px no-repeat
+}
+
 .section--background-base {
   background-color: #7B826A
 }
@@ -8549,3 +8553,31 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
   cursor: pointer;
 }
 
+.owl-carousel .item {
+  position: relative;
+  width: 100%;
+  height: 65vh; /* Full viewport height */
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make the image cover the entire container */
+}
+
+/* Optional: Center navigation buttons */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
