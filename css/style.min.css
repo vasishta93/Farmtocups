@@ -8581,3 +8581,14 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
   padding: 10px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .timeline__inner .row {
+        flex-direction: column;
+    }
+}
+
+footer#footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
