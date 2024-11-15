@@ -118,60 +118,76 @@
 
 						<div class="row">
 							<div class="col-md-6 col-lg-6">
-								<div class="column">
-									<div class="owl-carousel">
-										<div class="item">
-										  	<img src="img/mockup/1.png" alt="Slide 1">
+									<div class="column">
+										<div class="owl-carousel main-carousel">
+											<div class="item">
+												<img src="img/mockup/1.png" alt="Slide 1">
+											</div>
+											<div class="item">
+												<img src="img/mockup/2.png" alt="Slide 2">
+											</div>
+											<div class="item">
+												<img src="img/mockup/4.png" alt="Slide 3">
+											</div>
+											<div class="item">
+												<img src="img/mockup/5.png" alt="Slide 4">
+											</div>
+											<div class="item">
+												<img src="img/mockup/12.png" alt="Slide 5">
+											</div>
+											<div class="item">
+												<img src="img/mockup/14.png" alt="Slide 6">
+											</div>
 										</div>
-										<div class="item">
-										  	<img src="img/mockup/2.png"" alt="Slide 2">
-										</div>
-										<div class="item">
-										  	<img src="img/mockup/3.png"" alt="Slide 3">
-										</div>
-										<div class="item">
-										  	<img src="img/mockup/4.png"" alt="Slide 3">
-										</div>
-										<div class="item">
-										  	<img src="img/mockup/5.png"" alt="Slide 3">
-										</div>  
-										<div class="item">
-											<img src="img/mockup/9.png" alt="Slide 1">
-									  </div>
-									  <div class="item">
-											<img src="img/mockup/10.png"" alt="Slide 2">
-									  </div>
-									  <div class="item">
-											<img src="img/mockup/12.png"" alt="Slide 3">
-									  </div>
-									  <div class="item">
-											<img src="img/mockup/13.png"" alt="Slide 3">
-									  </div>
-									  <div class="item">
-										  <img src="img/mockup/14.png"" alt="Slide 3">
-									  </div>
-									  
-									  </div>
 								
-								</div>
-								<script>
-									$(document).ready(function(){
-									  $(".owl-carousel").owlCarousel({
-										loop: true,  // Infinite loop
-										margin: 0,   // No margin for full-width effect
-										nav: true,   // Show next/prev buttons
-										autoplay: true,  // Auto-play the slider
-										autoplayTimeout: 3000, // Slide interval in milliseconds
-										items: 1,   // Only show 1 item at a time (full width)
-									  });
-									});
-								  </script>
+										<!-- Thumbnail navigation -->
+										<div class="thumbnail-carousel">
+											<div class="thumb-item">
+												<img src="img/mockup/1.png" alt="Thumbnail 1">
+											</div>
+											<div class="thumb-item">
+												<img src="img/mockup/2.png" alt="Thumbnail 2">
+											</div>
+											<div class="thumb-item">
+												<img src="img/mockup/4.png" alt="Thumbnail 3">
+											</div>
+											<div class="thumb-item">
+												<img src="img/mockup/5.png" alt="Thumbnail 4">
+											</div>
+											<div class="thumb-item">
+												<img src="img/mockup/12.png" alt="Thumbnail 5">
+											</div>
+											<div class="thumb-item">
+												<img src="img/mockup/14.png" alt="Thumbnail 6">
+											</div>
+										</div>
+									</div>
+								
+									<script>
+										$(document).ready(function(){
+											// Initialize main carousel
+											var mainCarousel = $(".main-carousel").owlCarousel({
+												loop: true,
+												margin: 0,
+												nav: true,
+												items: 1,
+												autoplay: true,
+												autoplayTimeout: 10000,
+											});
+										
+											// Click event to sync thumbnail clicks with main carousel
+											$('.thumbnail-carousel .thumb-item').click(function(){
+												var index = $(this).index();
+												mainCarousel.trigger('to.owl.carousel', [index, 300]);
+											});
+										});
+										</script>
 							</div>
 
 							<div class="col-md-6 col-lg-6">
 								<div class="column">
 
-									<h3>Sampler Pack</h3>
+									<h3>Robusta Coffee</h3>
 									<h1>THAIMALA ROAST</h1>
 									<p>Thaimale Roast draws its name from the Kodava word for "Mother Hill," paying homage to Coorg’s sacred, life-giving hills. This 100% Robusta coffee captures the bold, full-bodied essence of Coorg, crafted with respect for the rich, nurturing spirit of the Western Ghats. Experience a powerful, pure cup that honors tradition with every sip.</p>
 									

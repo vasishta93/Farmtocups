@@ -3154,8 +3154,8 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
 }
 #top-bar__logo {
   float: left;
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 50px;
   background-image: url(../img/logo_2.png);
   -webkit-background-size: 100% 100%;
           background-size: 100%
@@ -8591,4 +8591,33 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
 footer#footer {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+/* Style for thumbnail carousel container */
+.thumbnail-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+/* Style for each thumbnail */
+.thumbnail-carousel .thumb-item {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail-carousel .thumb-item img {
+  width: 50px; /* Smaller size for miniature effect */
+  height: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+/* Active thumbnail effect */
+.thumbnail-carousel .thumb-item:hover img,
+.thumbnail-carousel .thumb-item.active img {
+  opacity: 1;
+  border-color: #555;
 }
