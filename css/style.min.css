@@ -8587,6 +8587,13 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
         flex-direction: column;
     }
 }
+@media (max-width: 768px) {
+  #productSlideshow {
+      width: 100vw;
+      margin-right: 0;
+      float: none;
+  }
+}
 
 footer#footer {
     padding-top: 10px;
@@ -8621,3 +8628,82 @@ footer#footer {
   opacity: 1;
   border-color: #555;
 }
+
+/* Prevent overflow from the container */
+.slider-container {
+  width: 50vw; /* Keep the slider half the viewport width */
+  margin-right: -25vw; /* Break out of the container */
+  float: right; /* Align to the right */
+  position: relative; /* Contain slider within layout */
+}
+
+/* Contain overflow at the root level */
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0; /* Remove any unintentional spacing */
+  padding: 0;
+}
+
+/* Slider container */
+.slider-container {
+  width: 50vw;
+  margin-right: -25vw;
+  float: right;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .slider-container {
+      width: 100%; /* Full width for tablets */
+      margin-right: 0;
+      float: none;
+  }
+}
+
+/* Thumbnail Styling */
+.carousel-thumbnails {
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.carousel-thumbnails button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.carousel-thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.carousel-thumbnails button.active img {
+  border-color: #007bff; /* Highlight active thumbnail */
+}
+
+/* Responsive Thumbnail Adjustments */
+@media (max-width: 768px) {
+  .carousel-thumbnails img {
+      width: 50px;
+      height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-thumbnails {
+      flex-direction: row;
+      flex-wrap: wrap; /* Thumbnails stack on smaller screens */
+      justify-content: center;
+  }
+
+  .carousel-thumbnails img {
+      width: 40px;
+      height: 40px; /* Smaller thumbnails for mobile */
+  }
+}
+
